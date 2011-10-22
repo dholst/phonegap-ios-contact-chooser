@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+    <meta charset="utf-8">
+
+    <style type="text/css">
+      body {
+        padding: 20px;
+      }
+
+      a {
+        font-family: Helvetica;
+        font-size: 20px;
+        color: #333;
+      }
+    </style>
+    <!-- iPad/iPhone specific css below, add after your main css >
+    <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />
+    -->
+    <!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+    <script type="text/javascript" charset="utf-8" src="phonegap-1.1.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="contacts.js"></script>
+    <script type="text/javascript">
+
+      function chooseContact() {
+        navigator.contacts.chooseContact(chooseContactSuccess, []);
+      }
+
+      function chooseContactSuccess(id) {
+        if(id > 0) {
+          var options = new ContactFindOptions();
+          options.filter = "" + id;
+          navigator.contacts.find(["id", "displayName"], findContactSuccess, findContactFailure, options);
+        }
+      }
+
+      function findContactSuccess(contacts) {
+        if(contacts.length != 1) {
+          findContactFailure("find by id returned " + contacts.length + " contacts");
+        }
+        else {
+          alert("you chose " + contacts[0].displayName);
+        }
+      }
+
+      function findContactFailure(maybeAnErrorMessage) {
+        alert("find failure " + maybeAnErrorMessage);
+      }
+
+    </script>
+  </head>
+  <body>
+    <a href="#" onclick="chooseContact();">Choose a contact</a>
+  </body>
+</html>

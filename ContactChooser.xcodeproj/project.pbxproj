@@ -33,6 +33,7 @@
 		5910F5EB1447C11B004B16C5 /* Capture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5910F5EA1447C11B004B16C5 /* Capture.bundle */; };
 		5910F5ED1447C11B004B16C5 /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5910F5EC1447C11B004B16C5 /* PhoneGap.plist */; };
 		5910F5F11447C11B004B16C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5910F5F01447C11B004B16C5 /* AppDelegate.m */; };
+		5910F5FA1447C264004B16C5 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 5910F5F91447C264004B16C5 /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,10 +51,10 @@
 		5910F5C41447C11B004B16C5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5910F5C61447C11B004B16C5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5910F5C81447C11B004B16C5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		5910F5CC1447C11B004B16C5 /* ContactChooser-Info.plist */ = {isa = PBXFileReference; path = "ContactChooser-Info.plist"; sourceTree = "<group>"; };
+		5910F5CC1447C11B004B16C5 /* ContactChooser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ContactChooser-Info.plist"; sourceTree = "<group>"; };
 		5910F5CE1447C11B004B16C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5910F5D01447C11B004B16C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5910F5D21447C11B004B16C5 /* ContactChooser-Prefix.pch */ = {isa = PBXFileReference; path = "ContactChooser-Prefix.pch"; sourceTree = "<group>"; };
+		5910F5D21447C11B004B16C5 /* ContactChooser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ContactChooser-Prefix.pch"; sourceTree = "<group>"; };
 		5910F5D31447C11B004B16C5 /* PhoneGap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneGap.framework; path = /Users/Shared/PhoneGap/Frameworks/PhoneGap.framework; sourceTree = "<absolute>"; };
 		5910F5D81447C11B004B16C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5910F5DC1447C11B004B16C5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -64,9 +65,10 @@
 		5910F5E81447C11B004B16C5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/splash/Default@2x.png"; sourceTree = "<group>"; };
 		5910F5EA1447C11B004B16C5 /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
 		5910F5EC1447C11B004B16C5 /* PhoneGap.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PhoneGap.plist; sourceTree = "<group>"; };
-		5910F5EF1447C11B004B16C5 /* AppDelegate.h */ = {isa = PBXFileReference; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		5910F5EF1447C11B004B16C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		5910F5F01447C11B004B16C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		5910F5F31447C11B004B16C5 /* README */ = {isa = PBXFileReference; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		5910F5F31447C11B004B16C5 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		5910F5F91447C264004B16C5 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		5910F59E1447C11B004B16C5 = {
 			isa = PBXGroup;
 			children = (
+				5910F5F91447C264004B16C5 /* www */,
 				5910F5CA1447C11B004B16C5 /* ContactChooser */,
 				5910F5AF1447C11B004B16C5 /* Frameworks */,
 				5910F5AD1447C11B004B16C5 /* Products */,
@@ -287,6 +290,7 @@
 				5910F5E91447C11B004B16C5 /* Default@2x.png in Resources */,
 				5910F5EB1447C11B004B16C5 /* Capture.bundle in Resources */,
 				5910F5ED1447C11B004B16C5 /* PhoneGap.plist in Resources */,
+				5910F5FA1447C264004B16C5 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +475,7 @@
 				5910F5F81447C11B004B16C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
