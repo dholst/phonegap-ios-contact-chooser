@@ -50,9 +50,23 @@
         alert("find failure " + maybeAnErrorMessage);
       }
 
+      function createSome(numberToCreate) {
+        for(var i = 0; i < numberToCreate; i++) {
+          var name = {
+            "givenName": "John",
+            "familyName": "Doe" + new Date().getTime() + i
+          };
+
+          navigator.contacts.create({"name": name}).save();
+        }
+
+        alert("done");
+      }
+
     </script>
   </head>
   <body>
-    <a href="#" onclick="chooseContact();">Choose a contact</a>
+    <a href="#" onclick="chooseContact();">Choose a contact</a><br>
+    <!-- <a href="#" onclick="createSome(100);">Create a bunch of contacts</a>-->
   </body>
 </html>
